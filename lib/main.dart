@@ -79,27 +79,28 @@ class _AppState extends State<App> {
           debugShowCheckedModeBanner: false,
           initialRoute: Routes.initial,
           theme: ThemeData(
-              toggleButtonsTheme: ToggleButtonsThemeData(
-                borderColor: Styles.k_brand_primary_color,
-                selectedBorderColor: Styles.k_brand_primary_color,
+            toggleButtonsTheme: ToggleButtonsThemeData(
+              borderColor: Styles.k_brand_primary_color,
+              selectedBorderColor: Styles.k_brand_primary_color,
+            ),
+            toggleableActiveColor: Styles.k_brand_primary_color,
+            fontFamily: 'Inter',
+            primaryColor: Styles.k_white_color,
+            disabledColor: Styles.k_disabled,
+            backgroundColor: Styles.k_black_color,
+            scaffoldBackgroundColor: Styles.k_black_color,
+            textSelectionTheme: TextSelectionThemeData(
+              cursorColor: Colors.black,
+            ),
+            textTheme: TextTheme(
+              bodyText1: TextStyle(
+                color: Colors.white,
               ),
-              toggleableActiveColor: Styles.k_brand_primary_color,
-              fontFamily: 'Inter',
-              primaryColor: Styles.k_white_color,
-              disabledColor: Styles.k_disabled,
-              backgroundColor: Styles.k_black_color,
-              scaffoldBackgroundColor: Styles.k_black_color,
-              textSelectionTheme: TextSelectionThemeData(
-                cursorColor: Colors.black,
+              bodyText2: TextStyle(
+                color: Colors.white,
               ),
-              textTheme: TextTheme(
-                bodyText1: TextStyle(
-                  color: Colors.white,
-                ),
-                bodyText2: TextStyle(
-                  color: Colors.white,
-                ),
-              )),
+            ),
+          ),
           routes: routes(),
         ),
       ),
